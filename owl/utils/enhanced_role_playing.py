@@ -509,9 +509,10 @@ async def arun_society(
     input_msg = society.init_chat(init_prompt)
     for _round in range(round_limit):
         assistant_response, user_response = await society.astep(input_msg)
-        overall_prompt_token_count += assistant_response.info["usage"][
-            "completion_tokens"
-        ]
+        overall_completion_token_count += (
+            assistant_response.info["usage"]["completion_tokens"]
+            + user_response.info["usage"]["completion_tokens"]
+        )
         overall_prompt_token_count += (
             assistant_response.info["usage"]["prompt_tokens"]
             + user_response.info["usage"]["prompt_tokens"]
