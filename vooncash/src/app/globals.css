@@ -37,6 +37,7 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  --color-gold: #d4af37;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -146,4 +147,24 @@
   animation: shimmer 2s infinite linear;
   background: linear-gradient(to right, #eff1f3 4%, #e2e2e2 25%, #eff1f3 36%);
   background-size: 1000px 100%;
+}
+
+/* DJ Golden Bling Custom Styles */
+.gold-gradient {
+  background: linear-gradient(135deg, #d4af37 0%, #f4e5a3 50%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-glow {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+}
+
+.section-padding {
+  @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto;
 }

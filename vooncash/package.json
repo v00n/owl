@@ -1,6 +1,6 @@
 {
-  "name": "vooncash",
-  "version": "0.1.0",
+  "name": "dj-golden-bling",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "node ./node_modules/next/dist/bin/next dev",

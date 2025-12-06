@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Card, CardProps } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import React from "react";
 
-interface AnimatedCardProps extends CardProps {
+interface AnimatedCardProps extends React.ComponentProps<"div"> {
   delay?: number;
   children: React.ReactNode;
 }
