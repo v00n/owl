@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Collection — Luxury Automobiles</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── HERO ─────────────────────────────────────────────────── -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <nav class="nav">
+      <span class="nav-logo">THE COLLECTION</span>
+      <ul class="nav-links">
+        <li><a href="#collection">Vehicles</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Private Automotive Collection</p>
+      <h1 class="hero-title">A Pursuit<br /><em>of Excellence</em></h1>
+      <p class="hero-sub">Five of the world's most distinguished automobiles, curated with obsession.</p>
+      <a href="#collection" class="btn-primary">View the Fleet</a>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span></span>
+    </div>
+  </header>
+
+  <!-- ─── COLLECTION GRID ───────────────────────────────────────── -->
+  <main id="collection" class="collection">
+    <div class="section-header">
+      <p class="section-eyebrow">The Fleet</p>
+      <h2 class="section-title">Five Icons</h2>
+    </div>
+
+    <div class="cars-grid">
+
+      <!-- Mercedes-Benz -->
+      <article class="car-card" data-color="#1a1a2e">
+        <div class="card-image-wrap">
+          <div class="card-image mb"></div>
+          <div class="card-badge">German Engineering</div>
+        </div>
+        <div class="card-body">
+          <p class="card-brand">Mercedes-Benz</p>
+          <h3 class="card-model">S-Class AMG</h3>
+          <p class="card-desc">The pinnacle of German automotive mastery. Where hand-stitched Nappa leather meets a twin-turbocharged V8 that whispers power at every revolution.</p>
+          <div class="card-specs">
+            <div class="spec"><span class="spec-val">630</span><span class="spec-label">HP</span></div>
+            <div class="spec"><span class="spec-val">3.4s</span><span class="spec-label">0–60</span></div>
+            <div class="spec"><span class="spec-val">V8</span><span class="spec-label">Engine</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Ferrari -->
+      <article class="car-card featured" data-color="#8b0000">
+        <div class="card-image-wrap">
+          <div class="card-image ferrari"></div>
+          <div class="card-badge">Maranello, Italy</div>
+        </div>
+        <div class="card-body">
+          <p class="card-brand">Ferrari</p>
+          <h3 class="card-model">SF90 Stradale</h3>
+          <p class="card-desc">A hybrid hypercar that rewrites what is possible. 986 combined horsepower, four-wheel drive, and a bloodline tracing back to Formula 1 supremacy.</p>
+          <div class="card-specs">
+            <div class="spec"><span class="spec-val">986</span><span class="spec-label">HP</span></div>
+            <div class="spec"><span class="spec-val">2.5s</span><span class="spec-label">0–60</span></div>
+            <div class="spec"><span class="spec-val">V8+3e</span><span class="spec-label">Engine</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Maybach -->
+      <article class="car-card" data-color="#0d1b2a">
+        <div class="card-image-wrap">
+          <div class="card-image maybach"></div>
+          <div class="card-badge">Ultra Luxury</div>
+        </div>
+        <div class="card-body">
+          <p class="card-brand">Mercedes-Maybach</p>
+          <h3 class="card-model">S 680</h3>
+          <p class="card-desc">Not merely a car — a private sanctuary on wheels. The Maybach S 680 redefines opulence with its bespoke cabin, champagne cooler, and whisper-quiet V12.</p>
+          <div class="card-specs">
+            <div class="spec"><span class="spec-val">621</span><span class="spec-label">HP</span></div>
+            <div class="spec"><span class="spec-val">4.8s</span><span class="spec-label">0–60</span></div>
+            <div class="spec"><span class="spec-val">V12</span><span class="spec-label">Engine</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Lamborghini -->
+      <article class="car-card" data-color="#1a0a00">
+        <div class="card-image-wrap">
+          <div class="card-image lambo"></div>
+          <div class="card-badge">Sant'Agata, Italy</div>
+        </div>
+        <div class="card-body">
+          <p class="card-brand">Lamborghini</p>
+          <h3 class="card-model">Urus Performante</h3>
+          <p class="card-desc">The super SUV that shattered every expectation. A naturally aspirated V10 sculpted into a body that could only come from the minds of the raging bull.</p>
+          <div class="card-specs">
+            <div class="spec"><span class="spec-val">657</span><span class="spec-label">HP</span></div>
+            <div class="spec"><span class="spec-val">3.3s</span><span class="spec-label">0–60</span></div>
+            <div class="spec"><span class="spec-val">V8T</span><span class="spec-label">Engine</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Range Rover -->
+      <article class="car-card" data-color="#0a1508">
+        <div class="card-image-wrap">
+          <div class="card-image range-rover"></div>
+          <div class="card-badge">British Royalty</div>
+        </div>
+        <div class="card-body">
+          <p class="card-brand">Range Rover</p>
+          <h3 class="card-model">SV Autobiography</h3>
+          <p class="card-desc">Born from the British countryside, bred for every terrain on earth. The SV Autobiography pairs commanding presence with an interior rivalling private aviation.</p>
+          <div class="card-specs">
+            <div class="spec"><span class="spec-val">523</span><span class="spec-label">HP</span></div>
+            <div class="spec"><span class="spec-val">5.1s</span><span class="spec-label">0–60</span></div>
+            <div class="spec"><span class="spec-val">V8</span><span class="spec-label">Engine</span></div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- ─── STATS STRIP ───────────────────────────────────────────── -->
+  <section class="stats-strip">
+    <div class="stat-item">
+      <span class="stat-num">5</span>
+      <span class="stat-text">Iconic Marques</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num">3,817</span>
+      <span class="stat-text">Combined Horsepower</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num">4</span>
+      <span class="stat-text">Countries of Origin</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num">∞</span>
+      <span class="stat-text">Passion</span>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─────────────────────────────────────────────────── -->
+  <section id="about" class="about">
+    <div class="about-text">
+      <p class="section-eyebrow">The Philosophy</p>
+      <h2 class="section-title">More Than Metal</h2>
+      <p>Every vehicle in this collection was chosen not merely for performance or prestige, but for the story it tells. Each marque represents a philosophy — a different answer to the question of what an automobile can be.</p>
+      <p>From the silent authority of the Maybach to the visceral fury of the Ferrari, these machines are living art. They are driven, cherished, and respected in equal measure.</p>
+    </div>
+    <div class="about-visual">
+      <div class="about-badge">
+        <span class="about-badge-year">Est.</span>
+        <span class="about-badge-num">2018</span>
+        <span class="about-badge-label">Collection Founded</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────────────────────────── -->
+  <section id="contact" class="contact">
+    <p class="section-eyebrow">Get In Touch</p>
+    <h2 class="section-title">Interested in the Collection?</h2>
+    <p class="contact-sub">For private viewings, collaboration, or enquiries, reach out below.</p>
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email Address" required />
+      </div>
+      <textarea placeholder="Your message…" rows="5" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+    <p class="form-confirm" id="form-confirm"></p>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <p class="nav-logo">THE COLLECTION</p>
+    <p class="footer-sub">Five cars. One passion. No compromise.</p>
+    <p class="footer-copy">&copy; 2026 The Collection. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
